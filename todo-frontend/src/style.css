@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #6366f1;
+  --color-brand-dark: #4f46e5;
+}
+
+body {
+  @apply bg-linear-to-br from-slate-50 to-slate-200 text-slate-900;
+  min-height: 100vh;
+}
