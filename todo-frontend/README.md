@@ -1,5 +1,81 @@
-# Vue 3 + TypeScript + Vite
+# Todo Frontend
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A Vue 3 frontend application for managing todos, built with TypeScript and Vite. Connects to a backend API to perform CRUD operations on todos.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Features
+
+- Add new todos
+- Mark todos as complete/incomplete
+- Delete todos
+- Responsive design with Tailwind CSS
+- Icons from Lucide
+
+## Prerequisites
+
+- Node.js (or Bun)
+- Backend API running on `http://localhost:3000`
+
+## Installation
+
+Install dependencies:
+
+```bash
+npm install
+# or
+bun install
+```
+
+## Development
+
+Start the development server:
+
+```bash
+npm run dev
+# or
+bun run dev
+```
+
+The app will be available at `http://localhost:5173`.
+
+## Build
+
+Build for production:
+
+```bash
+npm run build
+# or
+bun run build
+```
+
+## Preview
+
+Preview the production build:
+
+```bash
+npm run preview
+# or
+bun run preview
+```
+
+## Technologies
+
+- [Vue 3](https://vuejs.org/) - Progressive JavaScript framework
+- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript
+- [Vite](https://vitejs.dev/) - Build tool
+- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- [Lucide Vue Next](https://lucide.dev/) - Icon library
+
+## Project Structure
+
+```
+src/
+├── App.vue          # Main application component
+├── main.ts          # Application entry point
+├── style.css        # Global styles
+├── components/      # Vue components
+└── assets/          # Static assets
+```
+
+## API Integration
+
+The frontend communicates with the backend API at `http://localhost:3000/todos`. Ensure the backend is running before starting the frontend.
